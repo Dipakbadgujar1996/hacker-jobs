@@ -1,0 +1,183 @@
+/* App.css */
+
+/* Apply styles to the overall app container */
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  color: #fff;
+  border-bottom: 1px solid white;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.navbar .mode-toggle {
+  color: black;
+  background: none;
+  border-bottom: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  margin-left: 20px;
+}
+
+.navbar .nav-content:last-child {
+  margin-left: auto;
+}
+.navbar .mode-toggle:hover {
+  color: blue;
+}
+.navbar .mode-toggle:hover {
+  color: blue;
+}
+/* Style for the title */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for the list of stories */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for each story item */
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Style for story links */
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for story links */
+a:hover {
+  color: #007bff;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the Load More button */
+button:hover {
+  background-color: #0056b3;
+}
+/* Style for dark mode */
+.dark{
+  background-color: #333;
+  color:#fff;
+}
+.dark ul {
+  color: #fff; 
+  background-color: #222; 
+  border: 1px solid #444; 
+  padding: 10px; 
+}
+.dark ul li {
+  margin-bottom: 10px; 
+}
+
+.dark ul a {
+  color: #007bff; 
+  text-decoration: none;
+}
+.dark a:hover{
+  color: white;
+}
+.dark button.mode-toggle:hover {
+  color: #fff;
+}
+.dark ul li {
+  padding: 10px;
+  
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for light mode */
+.light {
+  background-color: #fff;
+  color: #333;
+}
+.light ul li {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.mode-toggle {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for the mode toggle button */
+button.mode-toggle:hover {
+  color: #0056b3;
+}
+
+/* media query */
+/* App.css */
+
+/* ... previous styles ... */
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navigation items vertically */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+  .App {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+  h1 {
+    font-size: 24px; /* Reduce font size for smaller screens */
+  }
+
+  .nav-content {
+    width: 100%; /* Take full width */
+    justify-content: space-between; /* Space items evenly */
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 10px; /* Add spacing between navigation items */
+  }
+
+  .app-title {
+    margin-right: 0; /* Remove margin for smaller screens */
+    margin-bottom: 10px; /* Add spacing below the title */
+  }
+
+  .mode-toggle {
+    margin-left: 0; /* Remove margin for smaller screens */
+  }
+}
